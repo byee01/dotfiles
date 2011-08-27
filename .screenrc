@@ -1,0 +1,13 @@
+startup_message off
+defscrollback 5000
+defutf8 on
+hardstatus alwayslastline "%{+b kr}[ %H ] %{ky} Load: %l %-= %c  %d.%m.%Y"
+caption always "%{= kw}%?%-Lw%?%{+b kw}%n*%t%f %?(%u)%?%{= kw}%?%+Lw%?"
+
+# Set up colors
+attrcolor b ".I"
+termcapinfo xterm* 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce on
+
+# Scroll support
+termcapinfo xterm* ti@:te@
