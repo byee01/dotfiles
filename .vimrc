@@ -1,15 +1,20 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+colorscheme desert
+
 if has("gui_running")
   colorscheme desert
   set guioptions-=T " Toolbar
   set guioptions-=e " GUI tabs
+  set guioptions-=m " Menu bar
   set guioptions-=r " Right scrollbar
   set guioptions-=R " Right scrollbar
   set guioptions-=l " Left scrollbar
   set guioptions-=L " Left scrollbar
   set guioptions-=b " Bottom scrollbar
+
+  set lines=50
 end
 
 let mapleader = ","
@@ -30,6 +35,8 @@ set sts=2
 set shiftwidth=2
 set shiftround
 set smarttab
+
+set background=dark
 
 set smartindent
 

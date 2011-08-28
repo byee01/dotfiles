@@ -3,6 +3,7 @@ import XMonad.Config.Gnome
 
 import XMonad.Layout.Maximize
 import XMonad.Layout.NoBorders
+import XMonad.Layout.LayoutHints
 
 import XMonad.Util.EZConfig(additionalKeys)
 
