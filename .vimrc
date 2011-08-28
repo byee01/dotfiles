@@ -1,4 +1,5 @@
-call pathogen#infect()
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 if has("gui_running")
   colorscheme desert
@@ -11,6 +12,7 @@ if has("gui_running")
   set guioptions-=b " Bottom scrollbar
 end
 
+let mapleader = ","
 
 set nocompatible
 set backspace=indent,eol,start
