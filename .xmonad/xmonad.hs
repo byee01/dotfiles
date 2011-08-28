@@ -10,7 +10,8 @@ modm = mod1Mask
 
 myWorkspaces = ["1:mal","2:book","3:inara","4:kaylee"]
 myKeys =
-    [ ((modm, xK_c), spawn $ "google-chrome")]
+    [ ((modm, xK_c), spawn $ "google-chrome")
+    , ((modm, xK_e), spawn $ "nautilus .")]
 
 main = do
   xmonad $ gnomeConfig {
