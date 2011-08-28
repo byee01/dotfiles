@@ -1,9 +1,11 @@
 import XMonad
 import XMonad.Config.Gnome
 
+import XMonad.Layout.HintedTile
+import XMonad.Layout.LayoutHints
 import XMonad.Layout.Maximize
 import XMonad.Layout.NoBorders
-import XMonad.Layout.LayoutHints
+import XMonad.Layout.ThreeColumns
 
 import XMonad.Util.EZConfig(additionalKeys)
 
@@ -16,8 +18,8 @@ myKeys =
 
 main = do
   xmonad $ gnomeConfig {
-      modMask            = modm,
-      workspaces         = myWorkspaces,
-      normalBorderColor = "#444444",
+      modMask             = modm,
+      workspaces          = myWorkspaces,
+      normalBorderColor   = "#444444",
       focusedBorderColor  = "#000000"
   } `additionalKeys` (myKeys)
