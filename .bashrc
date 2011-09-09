@@ -104,3 +104,4 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 source ~/.bash/byee_aliases.sh
+source ~/.bash/byee_commands.sh
